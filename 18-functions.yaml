@@ -54,6 +54,6 @@
 
   - name: check ipaddress
     ansible.builtin.debug:
-    msg: "{{ ipaddress | ansible.utilsipv4 }}"
+      msg: "{{ ipaddress | ansible.utilsipv4 }}"
 
   
