@@ -5,6 +5,7 @@
     technologies: Devops, Linux, Shell, Ansible
     name: "Mary gold"
     gmail: Info@GMAIL.COM
+    ipaddress: "22.56.54.78"
     tags:
       Application: payment
       Environment: dev
@@ -50,5 +51,9 @@
   - name: convert lowercase
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+
+  - name: check ipaddress
+    ansible.builtin.debug:
+    msg: "{{ ipaddress | ansible.utilsipv4 }}"
 
   
